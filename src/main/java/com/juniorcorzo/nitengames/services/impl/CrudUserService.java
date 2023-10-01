@@ -3,12 +3,15 @@ package com.juniorcorzo.nitengames.services.impl;
 import com.juniorcorzo.nitengames.entity.Users;
 import com.juniorcorzo.nitengames.repository.UserRepository;
 import com.juniorcorzo.nitengames.services.CrudBasicService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class CrudUserService implements CrudBasicService<Users, Integer> {
+    @Autowired
     private UserRepository userRepository;
     @Override
     public Users create(Users entity) {
