@@ -4,9 +4,9 @@ import java.util.List;
 
 public interface CrudBasicService<T, Integer> {
     T create(T entity);
-    T update(Integer id);
+    T update(T entity, Integer id);
     boolean delete(Integer id);
     List<T> getAll();
-    T getById();
+    T getById(Integer id);
 
 }
