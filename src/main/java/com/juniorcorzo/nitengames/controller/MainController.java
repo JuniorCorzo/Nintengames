@@ -24,12 +24,12 @@ public class MainController {
         return new ModelAndView(Pages.HOME).addObject("userInfo", new UserForm());
     }
 
-//    @PostMapping("/login")
-//    public ModelAndView validLogin(UserForm userInfo){
-//        if (new ValidatedService().isValidatedUser(userInfo.getEmail(), userInfo.getPassword(), userRepository)) return new ModelAndView(Pages.DASHBOARD);
-//        return new ModelAndView(Pages.HOME);
-//
-//    }
+    /*@PostMapping("/login")
+    public ModelAndView validLogin(UserForm userInfo){
+        if (new ValidatedService().isValidatedUser(userInfo.getEmail(), userInfo.getPassword(), userRepository)) return new ModelAndView(Pages.DASHBOARD);
+        return new ModelAndView(Pages.HOME);
+
+    }*/
 
     @GetMapping("/dashboard")
     public ModelAndView getDashboard(){
