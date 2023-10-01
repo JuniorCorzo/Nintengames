@@ -34,4 +34,8 @@ public class CrudUserService implements CrudBasicService<Users, Integer> {
     public Users getById(Integer id) {
         return userRepository.findById(id).orElse(null);
     }
+
+    public boolean validateUser(String email, String password){
+        return (long) userRepository.findByEmailAndPassword(email, password).size() == 1;
+    }
 }
