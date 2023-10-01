@@ -1,4 +1,4 @@
-package com.juniorcorzo.nitengames.model;
+package com.juniorcorzo.nitengames.entity;
 
 import org.springframework.data.annotation.Id;
 

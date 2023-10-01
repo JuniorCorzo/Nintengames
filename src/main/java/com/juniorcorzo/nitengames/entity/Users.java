@@ -1,4 +1,4 @@
-package com.juniorcorzo.nitengames.model;
+package com.juniorcorzo.nitengames.entity;
 
 import com.juniorcorzo.nitengames.repository.UserRepository;
 import jakarta.validation.constraints.Email;

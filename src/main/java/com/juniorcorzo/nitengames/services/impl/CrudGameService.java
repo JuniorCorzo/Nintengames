@@ -1,6 +1,6 @@
 package com.juniorcorzo.nitengames.services.impl;
 
-import com.juniorcorzo.nitengames.model.Games;
+import com.juniorcorzo.nitengames.entity.Games;
 import com.juniorcorzo.nitengames.repository.GameRepository;
 import com.juniorcorzo.nitengames.services.CrudBasicService;
 

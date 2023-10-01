@@ -1,7 +1,7 @@
 package com.juniorcorzo.nitengames.controller;
 
-import com.juniorcorzo.nitengames.model.Games;
-import com.juniorcorzo.nitengames.model.Users;
+import com.juniorcorzo.nitengames.entity.Games;
+import com.juniorcorzo.nitengames.entity.Users;
 import com.juniorcorzo.nitengames.repository.GameRepository;
 import com.juniorcorzo.nitengames.repository.UserRepository;
 import org.springframework.web.bind.annotation.GetMapping;
