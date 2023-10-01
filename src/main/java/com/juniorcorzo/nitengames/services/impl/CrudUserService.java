@@ -3,9 +3,11 @@ package com.juniorcorzo.nitengames.services.impl;
 import com.juniorcorzo.nitengames.entity.Users;
 import com.juniorcorzo.nitengames.repository.UserRepository;
 import com.juniorcorzo.nitengames.services.CrudBasicService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CrudUserService implements CrudBasicService<Users, Integer> {
     private UserRepository userRepository;
     @Override

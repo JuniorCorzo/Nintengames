@@ -3,9 +3,11 @@ package com.juniorcorzo.nitengames.services.impl;
 import com.juniorcorzo.nitengames.entity.Platforms;
 import com.juniorcorzo.nitengames.repository.PlatformsRepository;
 import com.juniorcorzo.nitengames.services.CrudBasicService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CrudPlatformsService implements CrudBasicService<Platforms, Integer> {
     private PlatformsRepository plataformsRepository;
     @Override

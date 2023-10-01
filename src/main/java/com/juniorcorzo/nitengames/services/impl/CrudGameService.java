@@ -3,9 +3,11 @@ package com.juniorcorzo.nitengames.services.impl;
 import com.juniorcorzo.nitengames.entity.Games;
 import com.juniorcorzo.nitengames.repository.GameRepository;
 import com.juniorcorzo.nitengames.services.CrudBasicService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CrudGameService implements CrudBasicService<Games, Integer> {
     private GameRepository gameRepository;
 
