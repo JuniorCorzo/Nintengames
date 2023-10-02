@@ -3,12 +3,14 @@ package com.juniorcorzo.nitengames.services.impl;
 import com.juniorcorzo.nitengames.entity.Categories;
 import com.juniorcorzo.nitengames.repository.CategoriesRepository;
 import com.juniorcorzo.nitengames.services.CrudBasicService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class CrudCategoriesService implements CrudBasicService<Categories, Integer> {
+    @Autowired
     private CategoriesRepository categoriesRepository;
 
     @Override
